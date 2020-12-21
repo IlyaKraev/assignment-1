@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View all trainers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/95932934dd.js"></script>
+</head>
+
+<body class="trainers">
+
+    <div class="header">
+        <img src="assets/img/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Add new entry
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="dropdown-content">
+                        <a href="new-course.html">Course</a>
+                        <a href="new-student.html">Student</a>
+                        <a href="new-trainer.html">Trainer</a>
+                        <a href="new-assignment.html">Assignment</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">View entry
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="view-courses.html">Courses</a>
+                        <a href="view-students.html">Students</a>
+                        <a href="#">Trainers</a>
+                        <a href="view-assignments.html">Assignments</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="container">
+            <h2>Select a trainer</h2><br>
+            <div class="parent">
+                <h2 id="trainer1">John Wick, Java Full Time</h2>
+            </div>
+            <div class="child">
+                <form id="form1" class="form" method="POST">
+                    <h2><i class="fa fa-user-circle" aria-hidden="true"></i>Trainer 1</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname1" autocomplete="off" value="John" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname1" autocomplete="off" value="Wick" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email1" autocomplete="off" value="johnftw@gmail.com" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone1" autocomplete="off" value="6943351678" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob1" autocomplete="off" value="01/01/1980" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Subject/s this trainer will teach" id="subject1" value="Java, Mysql" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect1"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to assign to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect1" class="selector" multiple disabled>
+                            <option value="Java Full Time" selected>Java Full Time</option>
+                            <option value="Java Part Time">Java Part Time</option>
+                            <option value="C# Full Time" >C# Full Time</option>
+                            <option value="C# Part Time">C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit1" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="trainer2">Chuck Johnson, Java Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form2" class="form" method="POST">
+                    <h2><i class="fa fa-user-circle" aria-hidden="true"></i>Trainer 2</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname2" autocomplete="off" value="Chuck" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname2" autocomplete="off" value="Johnson" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email2" autocomplete="off" value="cj23@yahoo.com" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone2" autocomplete="off" value="6985213478" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob2" autocomplete="off" value="01/03/1987" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Subject/s this trainer will teach" id="subject2" value="Java, Mysql, HTML, Css, Js" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect2"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to assign to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect2" class="selector" multiple disabled>
+                            <option value="Java Full Time" selected>Java Full Time</option>
+                            <option value="Java Part Time">Java Part Time</option>
+                            <option value="C# Full Time" >C# Full Time</option>
+                            <option value="C# Part Time">C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit2" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="trainer3">Ricardo Agueres, Java Part Time, C# Full Time</h2>
+            </div>
+            <div class="child">
+                <form id="form3" class="form" method="POST">
+                    <h2><i class="fa fa-user-circle" aria-hidden="true"></i>Trainer 3</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname3" autocomplete="off" value="Ricardo" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname3" autocomplete="off" value="Agueres" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email3" autocomplete="off" value="ricardo.losnoches@yahoo.es" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone3" autocomplete="off" value="6943351678" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob3" autocomplete="off" value="01/12/1988" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Subject/s this trainer will teach" id="subject3" value="Java, C#, MySql, HTML, Css, Js" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect3"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to assign to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect3" class="selector" multiple name="Course" disabled>
+                            <option value="Java Full Time" >Java Full Time</option>
+                            <option value="Java Part Time" selected>Java Part Time</option>
+                            <option value="C# Full Time" selected>C# Full Time</option>
+                            <option value="C# Part Time">C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit3" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="trainer4">Harry Ford, C# Full Time</h2>
+            </div>
+            <div class="child">
+                <form id="form4" class="form" method="POST">
+                    <h2><i class="fa fa-user-circle" aria-hidden="true"></i>Trainer 4</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" name="firstname" id="firstname4" autocomplete="off" value="Harry" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" name="lastname" id="lastname4" autocomplete="off" value="Ford" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" name="email" id="email4" autocomplete="off" value="harrymanback@gmail.com" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" name="phone" id="phone4" autocomplete="off" value="6934519781" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" name="dob" id="dob4" autocomplete="off" value="02/02/1978" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Subject/s this trainer will teach" name="subject" id="subject4" value="C#, Mysql" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect4"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to assign to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect4" class="selector" multiple name="Course" disabled>
+                            <option value="Java Full Time" >Java Full Time</option>
+                            <option value="Java Part Time">Java Part Time</option>
+                            <option value="C# Full Time" selected>C# Full Time</option>
+                            <option value="C# Part Time">C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit4" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="trainer5">Helen Solomon, C# Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form5" class="form" method="POST">
+                    <h2><i class="fa fa-user-circle" aria-hidden="true"></i>Trainer 5</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" name="firstname" id="firstname5" autocomplete="off" value="Helen" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" name="lastname" id="lastname5" autocomplete="off" value="Solomon" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" name="email" id="email5" autocomplete="off" value="sunonus@gmail.com" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" name="phone" id="phone5" autocomplete="off" value="6978563145" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" name="dob" id="dob5" autocomplete="off" value="05/06/1985" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Subject/s this trainer will teach" name="subject" id="subject5" value="C#" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect5"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to assign to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect5" class="selector" multiple name="Course" disabled>
+                            <option value="Java Full Time" >Java Full Time</option>
+                            <option value="Java Part Time">Java Part Time</option>
+                            <option value="C# Full Time" >C# Full Time</option>
+                            <option value="C# Part Time" selected>C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit5" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="next_page">
+                <h2>Next page</h2>
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery-ui.min.js"></script>
+            <script src="assets/js/script.js"></script>
+        </div>
+    </div>
+    <div class="footer">Ilya Kraev - Coding Bootcamp 12 &copy; 2020</div>
+</body>
+
+
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View all students</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/95932934dd.js"></script>
+</head>
+
+<body class="students">
+    <div class="header">
+        <img src="assets/img/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Add new entry
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="new-course.html">Course</a>
+                        <a href="new-student.html">Student</a>
+                        <a href="new-trainer.html">Trainer</a>
+                        <a href="new-assignment.html">Assignment</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">View entry
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="view-courses.html">Courses</a>
+                        <a href="#">Students</a>
+                        <a href="view-trainers.html">Trainers</a>
+                        <a href="view-assignments.html">Assignments</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="container">
+            <h2>Select a student</h2><br>
+            <div class="parent">
+                <h2 id="student1">Felix Prudr, Java Full Time</h2>
+            </div>
+            <div class="child">
+                <form id="form1" class="form">
+                    <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student 1</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname1" value="Felix" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname1" value="Prudr" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email1" value="f.prudr@gehena.se" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone1" value="+306988554466" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob1" value="15/05/1990" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <label for="fees1">Tuition fee instalments paid (&euro;):</label>
+                    <div class="form-field">
+                        <input id="fees1" type="number" step="500" value="1500" min="0" max="2500" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect1"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to enroll student into (hold ctrl for multiple & to deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect1" class="selector" multiple disabled>
+                                <option value="Java Full Time" selected>Java Full Time</option>
+                                <option value="Java Part Time">Java Part Time</option>
+                                <option value="C# Full Time" >C# Full Time</option>
+                                <option value="C# Part Time">C# Part Time</option>
+                            </select>
+                        <br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="aselect1"><i class="fa fa-book" aria-hidden="true"></i> Assignments (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect1" class="selector" multiple disabled>
+                                <option value="assignment1" selected>IA1: Backend basics </option>
+                                <option value="assignment2" selected>IA2: Databases basics</option>
+                                <option value="assignment3" >IA3: Front end basics</option>
+                                <option value="assignment4" selected>IA4: Back end Advanced</option>
+                                <option value="assignment5" >IA5: Front end Advanced</option>
+                                <option value="assignment6" >GA1: Computer app</option>
+                                <option value="assignment7" selected>GA2: Web app</option>
+                            </select><br><small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit1" class="edit" />
+                    </div>
+                </form>
+
+            </div>
+            <div class="parent">
+                <h2 id="student2">Fiona Drewson, Java Full Time, Java Part Time </h2>
+            </div>
+            <div class="child">
+                <form id="form2" class="form">
+                    <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student 2</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname2" value="Fiona" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname2" value="Drewson" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email2" value="fionaftw123@aol.com" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone2" value="+306965491378" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob2" value="10/11/1980" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <label for="fees2">Tuition fee instalments paid (&euro;):</label>
+                    <div class="form-field">
+                        <input id="fees2" type="number" step="500" value="2500" min="0" max="2500" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect2"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to enroll student into (hold ctrl for multiple & to deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect2" class="selector" multiple disabled>
+                                <option value="Java Full Time" selected>Java Full Time</option>
+                                <option value="Java Part Time" selected>Java Part Time</option>
+                                <option value="C# Full Time" >C# Full Time</option>
+                                <option value="C# Part Time">C# Part Time</option>
+                            </select>
+                        <br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="aselect2"><i class="fa fa-book" aria-hidden="true"></i> Assignments (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect2" class="selector" multiple disabled>
+                                <option value="assignment1" selected>IA1: Backend basics </option>
+                                <option value="assignment2" selected>IA2: Databases basics</option>
+                                <option value="assignment3" >IA3: Front end basics</option>
+                                <option value="assignment4" selected>IA4: Back end Advanced</option>
+                                <option value="assignment5" >IA5: Front end Advanced</option>
+                                <option value="assignment6" >GA1: Computer app</option>
+                                <option value="assignment7" selected>GA2: Web app</option>
+                            </select><br><small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit2" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="student3">Kojiro Takahashi, Java Part Time </h2>
+            </div>
+            <div class="child">
+                <form id="form3" class="form">
+                    <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student 3</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname3" value="Kojiro" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname3" value="Takahashi" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email3" value="kojirot@aol.jp" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone3" value="+306941236589" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob3" value="01/01/1988" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <label for="fees3">Tuition fee instalments paid (&euro;):</label>
+                    <div class="form-field">
+                        <input id="fees3" type="number" step="500" value="1000" min="0" max="2500" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect3"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to enroll student into (hold ctrl for multiple & to deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect3" class="selector" multiple disabled>
+                                <option value="Java Full Time" >Java Full Time</option>
+                                <option value="Java Part Time" >Java Part Time</option>
+                                <option value="C# Full Time" selected>C# Full Time</option>
+                                <option value="C# Part Time">C# Part Time</option>
+                            </select>
+                        <br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="aselect3"><i class="fa fa-book" aria-hidden="true"></i> Assignments (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect3" class="selector" multiple disabled>
+                                <option value="assignment1" selected>IA1: Backend basics </option>
+                                <option value="assignment2" selected>IA2: Databases basics</option>
+                                <option value="assignment3" >IA3: Front end basics</option>
+                                <option value="assignment4" selected>IA4: Back end Advanced</option>
+                                <option value="assignment5" >IA5: Front end Advanced</option>
+                                <option value="assignment6" >GA1: Computer app</option>
+                                <option value="assignment7" selected>GA2: Web app</option>
+                            </select><br><small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit3" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="student4">Duke Nukem, C# Full Time </h2>
+            </div>
+            <div class="child">
+                <form id="form4" class="form">
+                    <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student 4</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname4" value="Duke" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname4" value="Nukem" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email4" value="hailtothekingbb@duke.com" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone4" value="+306965491378" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob4" value="11/11/1991" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <label for="fees4">Tuition fee instalments paid (&euro;):</label>
+                    <div class="form-field">
+                        <input id="fees4" type="number" step="500" value="2500" min="0" max="2500" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect4"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to enroll student into (hold ctrl for multiple & to deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect4" class="selector" multiple disabled>
+                                <option value="Java Full Time" >Java Full Time</option>
+                                <option value="Java Part Time" >Java Part Time</option>
+                                <option value="C# Full Time" selected>C# Full Time</option>
+                                <option value="C# Part Time">C# Part Time</option>
+                            </select>
+                        <br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="aselect4"><i class="fa fa-book" aria-hidden="true"></i> Assignments (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect4" class="selector" multiple disabled>
+                                <option value="assignment1" selected>IA1: Backend basics </option>
+                                <option value="assignment2" selected>IA2: Databases basics</option>
+                                <option value="assignment3" selected>IA3: Front end basics</option>
+                                <option value="assignment4" selected>IA4: Back end Advanced</option>
+                                <option value="assignment5" >IA5: Front end Advanced</option>
+                                <option value="assignment6" selected>GA1: Computer app</option>
+                                <option value="assignment7" >GA2: Web app</option>
+                            </select><br><small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit4" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="student5">Katherine Fritz, C# Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form5" class="form">
+                    <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student 5</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="First name" id="firstname5" value="Katherine" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Last name" id="lastname5" value="Fritz" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="E-mail" id="email5" value="kathy123@gmail.com" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Phone number" id="phone5" value="+306965491378" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Birth date dd/mm/yyyy" id="dob5" value="10/11/1994" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <label for="fees5">Tuition fee instalments paid (&euro;):</label>
+                    <div class="form-field">
+                        <input id="fees5" type="number" step="500" value="500" min="0" max="2500" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect5"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to enroll student into (hold ctrl for multiple & to deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect5" class="selector" multiple disabled>
+                                <option value="Java Full Time" >Java Full Time</option>
+                                <option value="Java Part Time" >Java Part Time</option>
+                                <option value="C# Full Time" >C# Full Time</option>
+                                <option value="C# Part Time" selected>C# Part Time</option>
+                            </select>
+                        <br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="aselect5"><i class="fa fa-book" aria-hidden="true"></i> Assignments (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect5" class="selector" multiple disabled>
+                                <option value="assignment1" selected>IA1: Backend basics </option>
+                                <option value="assignment2" selected>IA2: Databases basics</option>
+                                <option value="assignment3" selected>IA3: Front end basics</option>
+                                <option value="assignment4" selected>IA4: Back end Advanced</option>
+                                <option value="assignment5" selected>IA5: Front end Advanced</option>
+                                <option value="assignment6" selected>GA1: Computer app</option>
+                                <option value="assignment7" selected>GA2: Web app</option>
+                            </select><br><small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit5" class="edit" />
+                    </div>
+                </form>
+
+            </div>
+            <div class="next_page">
+                <h2>Next page</h2>
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery-ui.min.js"></script>
+            <script src="assets/js/script.js"></script>
+        </div>
+    </div>
+    <div class="footer">Ilya Kraev - Coding Bootcamp 12 &copy; 2020</div>
+</body>
+
+
+</html>

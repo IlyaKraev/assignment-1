@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/95932934dd.js"></script>
+</head>
+<!-- To Ms. Lena Kapetanaki: I wanted to include an about and a contact page, but I got caught up in a vicious cycle of squishing bugs and ironing things out, 
+         so unfortunately I only have this spoof news story to make my website pretty. I hope it won't be judged as a negative! -->
+
+<body>
+    <div class="header">
+        <img src="assets/img/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Add new entry
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="new-course.html">Course</a>
+                        <a href="new-student.html">Student</a>
+                        <a href="new-trainer.html">Trainer</a>
+                        <a href="new-assignment.html">Assignment</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">View entry
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="view-courses.html">Courses</a>
+                        <a href="view-students.html">Students</a>
+                        <a href="view-trainers.html">Trainers</a>
+                        <a href="view-assignments.html">Assignments</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="greeting">
+            <h2>Welcome to the Sisyphus Private School Management System!</h2>
+            <small id="error">(Error: no connection to server. Loaded local content)</small>
+            <p class="main">Managing a school has never been easier! With a few clicks you can create courses, enroll students, hire trainers, create assignments and match each new entry to their respective course.</p>
+            <h4>Select a function from the navigation menu above.</h4>
+            <img class="logo" src="assets/img/ssms_logo.png" alt="school logo">
+        </div>
+        <div id="news-form">
+            <h3>Latest school news</h3><br>
+            <hr>
+            <h3>10/11/2019: Students demand that the day be expanded to 72 hours</h3>
+            <small></small><br>
+            <img id="news" src="assets/img/news.jpg" alt="news">
+            <p>Due to the insurmountable workload and ever encroaching assignment deadlines the students have demanded that the school administration expand the day to 72 hours. "There's simply not enough time, we are desperate!" said one young lady to our
+                reporter.
+            </p><br>
+            <p>Our correspondents have tried to reach the headmaster to hear his side of the story, but he refused to comment on this situation. More updates as the story unfolds.</p>
+        </div>
+    </div>
+    <div class="footer">Ilya Kraev - Coding Bootcamp 12 &copy; 2020</div>
+</body>
+
+</html>

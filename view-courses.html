@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View all courses</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/95932934dd.js"></script>
+</head>
+
+<body class="courses">
+    <div class="header">
+        <img src="assets/img/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Add new entry
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="dropdown-content">
+                        <a href="new-course.html">Course</a>
+                        <a href="new-student.html">Student</a>
+                        <a href="new-trainer.html">Trainer</a>
+                        <a href="new-assignment.html">Assignment</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">View entry
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Courses</a>
+                        <a href="view-students.html">Students</a>
+                        <a href="view-trainers.html">Trainers</a>
+                        <a href="view-assignments.html">Assignments</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="container">
+            <h2>Select a course</h2><br>
+            <div class="parent">
+                <h2 id="course1">CB12, Java, Full Time</h2>
+            </div>
+            <div class="child">
+                <form id="form1" class="form">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <h2> Course 1</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title1" autocomplete="off" value="CB12" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Topic" id="topic1" autocomplete="off" value="Java" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Stream" id="stream1" autocomplete="off" value="Full Time" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Starting date" id="sdate1" autocomplete="off" value="01/01/2020" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Ending date" id="edate1" autocomplete="off" value="03/30/2020" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="tselect1"><i class="fa fa-user-circle" aria-hidden="true"></i> Trainers in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="tselect1" class="selector" multiple disabled>
+                    <option value="trainer1" selected>John Wick</option>
+                    <option value="trainer2" selected>Tracy Hopkins</option>
+                    <option value="trainer3" selected>Luke Lemon</option>
+                    <option value="trainer4">Chuck Johnson</option>
+                    <option value="trainer5">Ricardo Agueres</option>
+                    <option value="trainer6">Harry Ford</option>
+                    <option value="trainer7">Joanna Jameson</option>
+                    <option value="trainer8">John Doe</option>
+                    <option value="trainer9">Helen Solomon</option>
+                    <option value="trainer10">George Smith</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="sselect1"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Students in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="sselect1" class="selector" multiple disabled>
+                    <option value="student1" selected>Felix Prudr</option>
+                    <option value="student2" selected>Grigori Rasputin</option>
+                    <option value="student3" selected>John Cena</option>
+                    <option value="student4" selected>Alexander Solzhenitzyn</option>
+                    <option value="student5" selected>Fiona Drewson</option>
+                    <option value="student6">Llyn Houston</option>
+                    <option value="student7">Kojiro Takahashi</option>
+                    <option value="student8">Edgar Pearson</option>
+                    <option value="student9">Lucius Lachance</option>
+                    <option value="student10">Duke Nukem</option>        
+                    <option value="student11">Flint Hannegan</option>
+                    <option value="student12">Jonathan Joestar</option>
+                    <option value="student13">Yu Shen</option>
+                    <option value="student14">Lin Ming</option>
+                    <option value="student15">Elizavetta Diaz</option>
+                    <option value="student16">Greg Statham</option>
+                    <option value="student17">Igor Shulgin</option>
+                    <option value="student18">Jorge Rodriguez</option>
+                    <option value="student19">Belamy Greger</option>
+                    <option value="student20">Katherine Fritz</option>
+                    <option value="student21">Pyotr Szadjyn</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="aselect1"><i class="fa fa-book" aria-hidden="true"></i> Assignments in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect1" class="selector" multiple disabled>
+                            <option value="assignment1" selected>IA1: Backend basics </option>
+                            <option value="assignment2" selected>IA2: Databases basics</option>
+                            <option value="assignment3" >IA3: Front end basics</option>
+                            <option value="assignment4" selected>IA4: Back end Advanced</option>
+                            <option value="assignment5" >IA5: Front end Advanced</option>
+                            <option value="assignment6" >GA1: Computer app</option>
+                            <option value="assignment7" selected>GA2: Web app</option>
+                        </select><br><small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit1" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="course2">CB12, Java, Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form2" class="form">
+                    <h2><i class="fa fa-university" aria-hidden="true"></i> Course 2</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title2" value="CB12" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Topic" id="topic2" value="Java" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Stream" id="stream2" value="Part Time" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Starting date" id="sdate2" value="01/01/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Ending date" id="edate2" value="06/30/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="tselect2"><i class="fa fa-user-circle" aria-hidden="true"></i> Trainers in course (Hold ctrl to add multiple):</label></div>
+                    <div class="form-field">
+                        <select id="tselect2" class="selector" multiple disabled>
+                    <option value="trainer1">John Wick</option>
+                    <option value="trainer2">Tracy Hopkins</option>
+                    <option value="trainer3" >Luke Lemon</option>
+                    <option value="trainer4" selected>Chuck Johnson</option>
+                    <option value="trainer5" selected>Ricardo Agueres</option>
+                    <option value="trainer6">Harry Ford</option>
+                    <option value="trainer7">Joanna Jameson</option>
+                    <option value="trainer8">John Doe</option>
+                    <option value="trainer9">Helen Solomon</option>
+                    <option value="trainer10">George Smith</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="sselect2"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Students in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="sselect2" class="selector" multiple disabled>
+                    <option value="student1">Felix Prudr</option>
+                    <option value="student2">Grigori Rasputin</option>
+                    <option value="student3">John Cena</option>
+                    <option value="student4">Alexander Solzhenitzyn</option>
+                    <option value="student5" selected>Fiona Drewson</option>
+                    <option value="student6" selected>Llyn Houston</option>
+                    <option value="student7" selected>Kojiro Takahashi</option>
+                    <option value="student8" selected>Edgar Pearson</option>
+                    <option value="student9" selected>Lucius Lachance</option>
+                    <option value="student10">Duke Nukem</option>        
+                    <option value="student11">Flint Hannegan</option>
+                    <option value="student12">Jonathan Joestar</option>
+                    <option value="student13">Yu Shen</option>
+                    <option value="student14">Lin Ming</option>
+                    <option value="student15">Elizavetta Diaz</option>
+                    <option value="student16">Greg Statham</option>
+                    <option value="student17">Igor Shulgin</option>
+                    <option value="student18">Jorge Rodriguez</option>
+                    <option value="student19">Belamy Greger</option>
+                    <option value="student20">Katherine Fritz</option>
+                    <option value="student21">Pyotr Szadjyn</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="aselect2"><i class="fa fa-book" aria-hidden="true"></i> Assignments in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect2" class="selector" multiple disabled>
+                    <option value="assignment1" selected>IA1: Backend basics </option>
+                    <option value="assignment2" selected>IA2: Databases basics</option>
+                    <option value="assignment3" selected>IA3: Front end basics</option>
+                    <option value="assignment4" selected>IA4: Back end Advanced</option>
+                    <option value="assignment5" selected>IA5: Front end Advanced</option>
+                    <option value="assignment6" selected>GA1: Computer app</option>
+                    <option value="assignment7" selected>GA2: Web app</option>
+                </select><br><small></small>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit2" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="course3">CB12, C#, Full Time</h2>
+            </div>
+            <div class="child">
+                <form id="form3" class="form">
+                    <h2><i class="fa fa-university" aria-hidden="true"></i> Course 3</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title3" value="CB12" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Topic" id="topic3" value="C#" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Stream" id="stream3" value="Full Time" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Starting date" id="sdate3" value="01/01/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Ending date" id="edate3" value="03/30/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="tselect3"><i class="fa fa-user-circle" aria-hidden="true"></i> Trainers in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="tselect3" class="selector" multiple disabled>
+                    <option value="trainer1">John Wick</option>
+                    <option value="trainer2">Tracy Hopkins</option>
+                    <option value="trainer3">Luke Lemon</option>
+                    <option value="trainer4">Chuck Johnson</option>
+                    <option value="trainer5" selected>Ricardo Agueres</option>
+                    <option value="trainer6" selected>Harry Ford</option>
+                    <option value="trainer7" selected>Joanna Jameson</option>
+                    <option value="trainer8" selected>John Doe</option>
+                    <option value="trainer9">Helen Solomon</option>
+                    <option value="trainer10">George Smith</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="sselect3"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Students in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="sselect3" class="selector" multiple disabled>
+                    <option value="student1">Felix Prudr</option>
+                    <option value="student2">Grigori Rasputin</option>
+                    <option value="student3">John Cena</option>
+                    <option value="student4">Alexander Solzhenitzyn</option>
+                    <option value="student5">Fiona Drewson</option>
+                    <option value="student6">Llyn Houston</option>
+                    <option value="student7">Kojiro Takahashi</option>
+                    <option value="student8">Edgar Pearson</option>
+                    <option value="student9">Lucius Lachance</option>
+                    <option value="student10" selected>Duke Nukem</option>        
+                    <option value="student11" selected>Flint Hannegan</option>
+                    <option value="student12" selected>Jonathan Joestar</option>
+                    <option value="student13" selected>Yu Shen</option>
+                    <option value="student14" selected>Lin Ming</option>
+                    <option value="student15" selected>Elizavetta Diaz</option>
+                    <option value="student16" selected>Greg Statham</option>
+                    <option value="student17" selected>Igor Shulgin</option>
+                    <option value="student18">Jorge Rodriguez</option>
+                    <option value="student19">Belamy Greger</option>
+                    <option value="student20">Katherine Fritz</option>
+                    <option value="student21">Pyotr Szadjyn</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="aselect3"><i class="fa fa-book" aria-hidden="true"></i> Assignments in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field-selector">
+                        <select id="aselect3" class="selector" multiple disabled>
+                    <option value="assignment1" selected>IA1: Backend basics </option>
+                    <option value="assignment2" selected>IA2: Databases basics</option>
+                    <option value="assignment3" selected>IA3: Front end basics</option>
+                    <option value="assignment4" selected>IA4: Back end Advanced</option>
+                    <option value="assignment5">IA5: Front end Advanced</option>
+                    <option value="assignment6" selected>GA1: Computer app</option>
+                    <option value="assignment7">GA2: Web app</option>
+                </select><br><small></small>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit3" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="course4">CB12, C#, Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form4" class="form">
+                    <h2><i class="fa fa-university" aria-hidden="true"></i> Course 4</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title4" value="CB12" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Topic" id="topic4" value="C#" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Stream" id="stream4" value="Part Time" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Starting date" id="sdate4" value="01/01/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Ending date" id="edate4" value="06/30/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="tselect4"><i class="fa fa-user-circle" aria-hidden="true"></i> Trainers in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="tselect4" class="selector" multiple disabled>
+                    <option value="trainer1">John Wick</option>
+                    <option value="trainer2">Tracy Hopkins</option>
+                    <option value="trainer3">Luke Lemon</option>
+                    <option value="trainer4">Chuck Johnson</option>
+                    <option value="trainer5">Ricardo Agueres</option>
+                    <option value="trainer6">Harry Ford</option>
+                    <option value="trainer7">Joanna Jameson</option>
+                    <option value="trainer8">John Doe</option>
+                    <option value="trainer9" selected>Helen Solomon</option>
+                    <option value="trainer10" selected>George Smith</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="sselect4"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Students in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="sselect4" class="selector" multiple disabled>
+                    <option value="student1">Felix Prudr</option>
+                    <option value="student2">Grigori Rasputin</option>
+                    <option value="student3">John Cena</option>
+                    <option value="student4">Alexander Solzhenitzyn</option>
+                    <option value="student5">Fiona Drewson</option>
+                    <option value="student6">Llyn Houston</option>
+                    <option value="student7">Kojiro Takahashi</option>
+                    <option value="student8">Edgar Pearson</option>
+                    <option value="student9">Lucius Lachance</option>
+                    <option value="student10">Duke Nukem</option>        
+                    <option value="student11">Flint Hannegan</option>
+                    <option value="student12">Jonathan Joestar</option>
+                    <option value="student13">Yu Shen</option>
+                    <option value="student14">Lin Ming</option>
+                    <option value="student15">Elizavetta Diaz</option>
+                    <option value="student16">Greg Statham</option>
+                    <option value="student17">Igor Shulgin</option>
+                    <option value="student18" selected>Jorge Rodriguez</option>
+                    <option value="student19" selected>Belamy Greger</option>
+                    <option value="student20" selected>Katherine Fritz</option>
+                    <option value="student21" selected>Pyotr Szadjyn</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="divide"><label for="aselect4"><i class="fa fa-book" aria-hidden="true"></i> Assignments in course (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="aselect4" class="selector" multiple disabled>
+                    <option value="assignment1" selected="selected">IA1: Backend basics </option>
+                    <option value="assignment2" selected>IA2: Databases basics</option>
+                    <option value="assignment3" selected>IA3: Front end basics</option>
+                    <option value="assignment4" selected>IA4: Back end Advanced</option>
+                    <option value="assignment5" selected>IA5: Front end Advanced</option>
+                    <option value="assignment6" selected>GA1: Computer app</option>
+                    <option value="assignment7" selected>GA2: Web app</option>
+                </select><br><small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit4" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery-ui.min.js"></script>
+            <script src="assets/js/script.js"></script>
+        </div>
+    </div>
+    <div class="footer">Ilya Kraev - Coding Bootcamp 12 &copy; 2020</div>
+</body>
+
+
+</html>

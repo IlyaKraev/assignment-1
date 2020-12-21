@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View all assignments</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+</head>
+
+<body class="assignments">
+    <div class="header">
+        <img src="assets/img/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Add new entry
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="new-course.html">Course</a>
+                        <a href="new-student.html">Student</a>
+                        <a href="new-trainer.html">Trainer</a>
+                        <a href="new-assignment.html">Assignment</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">View entry
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="view-courses.html">Courses</a>
+                        <a href="view-students.html">Students</a>
+                        <a href="view-trainers.html">Trainers</a>
+                        <a href="#">Assignments</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="container">
+            <h2>Select assignment</h2><br>
+            <div class="parent">
+                <h2 id="assignment1">Assignment 1, Java Full Time, Java Part Time, C# Full Time, C# Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form1" class="form">
+                    <h2><i class="fa fa-book" aria-hidden="true"></i> Assignment 1</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title1" value="Assignment 1" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Description" id="description1" value="Backend basics" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Due date" id="subdate1" value="01/20/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect1"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to add assignment to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect1" class="selector" name="Course" multiple disabled>
+                            <option value="Java Full Time" selected>Java Full Time</option>
+                            <option value="Java Part Time" selected>Java Part Time</option>
+                            <option value="C# Full Time" selected>C# Full Time</option>
+                            <option value="C# Part Time" selected>C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit1" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="assignment2">Assignment 2, Java Full Time, Java Part Time, C# Full Time, C# Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form2" class="form">
+                    <h2><i class="fa fa-book" aria-hidden="true"></i> Assignment 2</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title2" value="Assignment 2" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Description" id="description2" value="Databases basics" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Due date" id="subdate2" value="01/30/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect2"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to add assignment to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect2" class="selector" name="Course" multiple disabled>
+                            <option value="Java Full Time" selected>Java Full Time</option>
+                            <option value="Java Part Time" selected>Java Part Time</option>
+                            <option value="C# Full Time" selected>C# Full Time</option>
+                            <option value="C# Part Time" selected>C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit2" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="assignment3">Assignment 3, Java Part Time, C# Full Time, C# Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form3" class="form">
+                    <h2><i class="fa fa-book" aria-hidden="true"></i> Assignment 3</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" name="title" id="title3" value="Assignment 3" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Description" name="description" id="description3" value="Backend basics" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Due date" name="subdate" id="subdate3" value="02/15/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect3"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to add assignment to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect3" class="selector" name="Course" multiple disabled>
+                            <option value="Java Full Time" >Java Full Time</option>
+                            <option value="Java Part Time" selected>Java Part Time</option>
+                            <option value="C# Full Time" selected>C# Full Time</option>
+                            <option value="C# Part Time" selected>C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit3" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="assignment4">Assignment 4, Java Full Time, Java Part Time, C# Full Time, C# Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form4" class="form">
+                    <h2><i class="fa fa-book" aria-hidden="true"></i> Assignment 4</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title4" value="Assignment 4" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Description" id="description4" value="Backend advanced" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Due date" id="subdate4" value="03/15/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect4"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to add assignment to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect4" class="selector" name="Course" multiple disabled>
+                            <option value="Java Full Time" selected>Java Full Time</option>
+                            <option value="Java Part Time" selected>Java Part Time</option>
+                            <option value="C# Full Time" selected>C# Full Time</option>
+                            <option value="C# Part Time" selected>C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit4" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="parent">
+                <h2 id="assignment5">Assignment 5, Java Part Time, C# Part Time</h2>
+            </div>
+            <div class="child">
+                <form id="form5" class="form">
+                    <h2><i class="fa fa-book" aria-hidden="true"></i> Assignment 5</h2>
+                    <div class="form-field">
+                        <input type="text" placeholder="Title" id="title5" value="Assignment 5" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Description" id="description5" value="Front end advanced" autocomplete="off" readonly><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Due date" id="subdate5" value="05/30/2020" autocomplete="off" disabled><br>
+                        <small></small>
+                    </div>
+                    <div class="divide"><label for="cselect5"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to add assignment to (hold ctrl for multiple & deselect):</label></div>
+                    <div class="form-field">
+                        <select id="cselect5" class="selector" name="Course" multiple disabled>
+                            <option value="Java Full Time" >Java Full Time</option>
+                            <option value="Java Part Time" selected>Java Part Time</option>
+                            <option value="C# Full Time" >C# Full Time</option>
+                            <option value="C# Part Time" selected>C# Part Time</option>
+                        </select><br>
+                        <small></small>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Update" class="update" disabled />
+                        <input type="button" value="Edit" id="edit5" class="edit" />
+                    </div>
+                </form>
+            </div>
+            <div class="next_page">
+                <h2>Next page</h2>
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery-ui.min.js"></script>
+            <script src="assets/js/script.js"></script>
+            <script src="https://use.fontawesome.com/95932934dd.js"></script>
+        </div>
+    </div>
+    <div class="footer">Ilya Kraev - Coding Bootcamp 12 &copy; 2020</div>
+</body>
+
+
+</html>

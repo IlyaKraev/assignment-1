@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Assignment</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://use.fontawesome.com/95932934dd.js"></script>
+</head>
+
+<body class="assignment_form">
+    <div class="header">
+        <img src="assets/img/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Add new entry
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="dropdown-content">
+                        <a href="new-course.html">Course</a>
+                        <a href="new-student.html">Student</a>
+                        <a href="new-trainer.html">Trainer</a>
+                        <a href="#">Assignment</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">View entry
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="view-courses.html">Courses</a>
+                        <a href="view-students.html">Students</a>
+                        <a href="view-trainers.html">Trainers</a>
+                        <a href="view-assignments.html">Assignments</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <form id="aform" class="form">
+            <h2><i class="fa fa-book" aria-hidden="true"></i> New Assignment</h2>
+            <div class="form-field">
+                <input type="text" placeholder="Title" id="title" autocomplete="off"><br>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Description" id="description" autocomplete="off"><br>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Due date" id="subdate" autocomplete="off"><br>
+                <small></small>
+            </div>
+            <div class="divide"><label for="cselect"><i class="fa fa-university" aria-hidden="true"></i> Select course/s to add assignment to (hold ctrl for multiple & deselect):</label></div>
+            <div class="form-field">
+                <select id="cselect" class="selector" name="Course" multiple>
+                    <option value="" selected>---</option>
+                    <option value="Java Full Time" >Java Full Time</option>
+                    <option value="Java Part Time">Java Part Time</option>
+                    <option value="C# Full Time" >C# Full Time</option>
+                    <option value="C# Part Time">C# Part Time</option>
+                </select><br>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <input id="tsumbmit" type="submit" value="Submit" class="submit" />
+                <input id="treset" type="reset" value="Clear" class="clear" />
+            </div>
+        </form>
+    </div>
+    <div class="footer">Ilya Kraev - Coding Bootcamp 12 &copy; 2020</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
